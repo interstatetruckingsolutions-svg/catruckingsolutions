@@ -16,34 +16,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Publish to GitHub
+## Repository
 
-This folder is **already a Git repository** with an initial commit on branch `main`.
+Remote: **[interstatetruckingsolutions-svg/catruckingsolutions](https://github.com/interstatetruckingsolutions-svg/catruckingsolutions)** (`main`).
 
-**Remote:** `origin` → `https://github.com/interstatetruckingsolutions-svg/catruckingsolutions-web.git`  
-If that is not your GitHub user or repo name, change it:
+After local changes:
 
-```powershell
-cd "c:\Users\ITS\Documents\catruckingsolutions-web"
-git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+```bash
+git add .
+git commit -m "Your message"
+git push
 ```
 
-**Finish publishing**
-
-1. On GitHub, create a **new empty** repository (same name as in the URL, e.g. `catruckingsolutions-web`). Do **not** add a README or `.gitignore` there.
-2. Push from your PC (if `git` is not in your PATH, use the full path to `git.exe`):
-
-```powershell
-cd "c:\Users\ITS\Documents\catruckingsolutions-web"
-& "C:\Program Files\Git\bin\git.exe" push -u origin main
-```
-
-Sign in when prompted, or use a [Personal Access Token](https://github.com/settings/tokens) as the password for HTTPS.
-
-**Alternatives**
-
-- **GitHub Desktop:** File → Add local repository → this folder → if no remote, Repository → Repository settings → Remote → add `origin`, then Publish / Push.
-- **SSH:** `git remote set-url origin git@github.com:YOUR_USERNAME/catruckingsolutions-web.git` then `git push -u origin main` (requires an SSH key on your GitHub account).
+Use a [Personal Access Token](https://github.com/settings/tokens) for HTTPS if prompted for a password.
 
 ## Build
 
