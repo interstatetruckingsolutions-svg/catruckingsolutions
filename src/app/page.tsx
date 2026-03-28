@@ -28,13 +28,13 @@ export default function HomePage() {
         <section className="border-b border-slate-200 bg-white" aria-labelledby="hero-title">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
             <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-center lg:gap-16">
-              <div className="flex w-full max-w-md shrink-0 justify-center lg:justify-start">
+              <div className="flex w-full max-w-lg shrink-0 justify-center lg:justify-start">
                 <Image
                   src="/logo.png"
                   alt="CA Trucking Solutions — IRP, IFTA, and insurance compliance"
-                  width={420}
-                  height={200}
-                  className="h-auto w-full max-w-sm object-contain"
+                  width={560}
+                  height={267}
+                  className="h-auto w-full max-w-lg object-contain"
                   priority
                 />
               </div>

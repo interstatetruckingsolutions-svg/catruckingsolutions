@@ -26,9 +26,9 @@ export function SiteHeader() {
           <Image
             src="/logo.png"
             alt="CA Trucking Solutions"
-            width={160}
-            height={48}
-            className="h-10 w-auto sm:h-11"
+            width={320}
+            height={96}
+            className="h-14 w-auto sm:h-16"
             priority
           />
         </Link>
