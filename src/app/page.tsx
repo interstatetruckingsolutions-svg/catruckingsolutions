@@ -83,7 +83,7 @@ export default function HomePage() {
               <li className="rounded-xl border border-slate-100 bg-slate-50 px-5 py-4 text-left shadow-sm">
                 <p className="text-sm font-bold text-brand-orange">Fast</p>
                 <p className="mt-1 text-sm text-slate-600">
-                  Same-day DMV processing when possible
+                  Same-day DMV processing available
                 </p>
               </li>
               <li className="rounded-xl border border-slate-100 bg-slate-50 px-5 py-4 text-left shadow-sm">
@@ -136,7 +136,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="mt-4 text-lg font-semibold text-brand-navy">Fast turnaround</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  Same-day DMV processing when possible and quick insurance quotes—so you can get
+                  Same-day DMV processing available and quick insurance quotes—so you can get
                   rolling sooner.
                 </p>
               </article>
