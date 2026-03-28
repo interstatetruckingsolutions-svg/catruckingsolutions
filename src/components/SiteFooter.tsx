@@ -8,9 +8,7 @@ export function SiteFooter() {
           <div>
             <p className="font-semibold text-white">CA Trucking Solutions</p>
             <p className="mt-3 max-w-md text-sm leading-relaxed">
-              Licensed by the California DMV for IRP services; errors &amp; omissions coverage
-              maintained. Clients should retain copies of all filings—we provide a digital packet
-              of documents submitted.
+              Not licensed by the California DMV or any other goverment agencies. Informational purposes only.
             </p>
           </div>
           <div className="flex flex-col gap-2 text-sm md:items-end">
