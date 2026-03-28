@@ -18,31 +18,32 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Publish to GitHub
 
-1. **Install Git for Windows** if `git` is not recognized in PowerShell or Command Prompt.
+This folder is **already a Git repository** with an initial commit on branch `main`.
 
-2. **Create an empty repository** on GitHub (no README, no `.gitignore`—this project already has them). Note the repository URL, for example `https://github.com/YOUR_USERNAME/catruckingsolutions-web.git`.
-
-3. In PowerShell or Git Bash:
+**Remote:** `origin` → `https://github.com/interstatetruckingsolutions-svg/catruckingsolutions-web.git`  
+If that is not your GitHub user or repo name, change it:
 
 ```powershell
 cd "c:\Users\ITS\Documents\catruckingsolutions-web"
-
-git init
-git add .
-git commit -m "Initial commit: CA Trucking Solutions Next.js site"
-
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/catruckingsolutions-web.git
-git push -u origin main
+git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 ```
 
-Replace `YOUR_USERNAME` and the repo name with yours.
+**Finish publishing**
 
-4. **Authentication:** GitHub no longer accepts account passwords for HTTPS Git. Use one of:
+1. On GitHub, create a **new empty** repository (same name as in the URL, e.g. `catruckingsolutions-web`). Do **not** add a README or `.gitignore` there.
+2. Push from your PC (if `git` is not in your PATH, use the full path to `git.exe`):
 
-   - **GitHub Desktop** (easiest): File → Add local repository → choose this folder → Publish repository.
-   - **SSH:** Add an SSH key in GitHub Settings → SSH keys, then use `git@github.com:YOUR_USERNAME/catruckingsolutions-web.git` as `origin`.
-   - **HTTPS + credential manager:** When you `git push`, sign in with a [Personal Access Token](https://github.com/settings/tokens) instead of a password.
+```powershell
+cd "c:\Users\ITS\Documents\catruckingsolutions-web"
+& "C:\Program Files\Git\bin\git.exe" push -u origin main
+```
+
+Sign in when prompted, or use a [Personal Access Token](https://github.com/settings/tokens) as the password for HTTPS.
+
+**Alternatives**
+
+- **GitHub Desktop:** File → Add local repository → this folder → if no remote, Repository → Repository settings → Remote → add `origin`, then Publish / Push.
+- **SSH:** `git remote set-url origin git@github.com:YOUR_USERNAME/catruckingsolutions-web.git` then `git push -u origin main` (requires an SSH key on your GitHub account).
 
 ## Build
 
