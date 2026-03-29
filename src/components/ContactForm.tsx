@@ -2,6 +2,8 @@
 
 import { FormEvent, useState } from "react";
 
+const CONTACT_EMAIL = "interstatetruckingsolutions@gmail.com";
+
 export function ContactForm() {
   const [status, setStatus] = useState<string | null>(null);
 
@@ -33,8 +35,8 @@ export function ContactForm() {
     const subject = encodeURIComponent(
       `Compliance quote request — ${fd.get("name") || "CA Trucking"}`
     );
-    window.location.href = `mailto:info@catruckingsolutions.com?subject=${subject}&body=${body}`;
-    setStatus("If your email app did not open, email info@catruckingsolutions.com directly.");
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    setStatus(`If your email app did not open, email ${CONTACT_EMAIL} directly.`);
   }
 
   return (
