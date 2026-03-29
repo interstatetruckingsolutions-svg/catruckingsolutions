@@ -4,7 +4,7 @@ import { WhySection } from "@/components/site-sections";
 export const metadata: Metadata = {
   title: "Why us | CA Trucking Solutions",
   description:
-    "Licensed IRP agents and insurance specialists for California truckers—fast DMV processing, friendly support, all-in-one compliance.",
+    "IRP registration and insurance support for California truckers—fast turnaround, friendly help, all-in-one compliance guidance.",
   alternates: { canonical: "/why" },
 };
 

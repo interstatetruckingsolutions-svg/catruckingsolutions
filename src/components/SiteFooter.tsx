@@ -4,7 +4,7 @@ import { SITE_NAME } from "@/lib/site";
 
 const serviceLinks = [
   { href: "/services#irp", label: "IRP registration" },
-  { href: "/services#ifta", label: "IFTA fuel license" },
+  { href: "/services#ifta", label: "IFTA fuel tax" },
   { href: "/services#boc-3", label: "BOC-3 process agent" },
   { href: "/services#insurance", label: "Trucking insurance" },
   { href: "/services#compliance-consulting", label: "Compliance consulting" },
@@ -51,8 +51,8 @@ export function SiteFooter() {
               compliant and on the road.
             </p>
             <p className="mt-4 max-w-sm text-xs leading-relaxed text-white/55">
-              Not licensed by the California DMV or any other government agencies. Informational
-              purposes only.
+              Private informational site only—not affiliated with or endorsed by any government
+              agency.
             </p>
           </div>
           <div className="grid flex-1 grid-cols-1 gap-10 sm:grid-cols-3 sm:gap-8">

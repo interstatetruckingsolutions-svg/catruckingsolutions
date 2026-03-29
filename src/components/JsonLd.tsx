@@ -7,7 +7,7 @@ const jsonLd = {
       name: "CA Trucking Solutions",
       url: "https://catruckingsolutions.com/",
       description:
-        "California IRP registration, IFTA fuel licensing, BOC-3 process agent filing, and trucking insurance for interstate carriers.",
+        "California IRP registration, IFTA fuel tax, BOC-3 process agent filing, and trucking insurance for interstate carriers.",
       areaServed: { "@type": "State", name: "California" },
       serviceType: [
         "IRP apportioned registration",

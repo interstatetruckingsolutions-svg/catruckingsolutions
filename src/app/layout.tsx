@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://catruckingsolutions.com"),
   title: "CA Trucking Solutions | IRP & Insurance Compliance Made Easy",
   description:
-    "California IRP registration, IFTA fuel tax licensing, BOC-3 process agents, and trucking insurance in one place. Licensed IRP agents—fast DMV processing, FMCSA compliance, friendly support for CA truckers.",
+    "California IRP registration, IFTA fuel tax, BOC-3 process agents, and trucking insurance in one place. Friendly support for CA truckers navigating compliance paperwork.",
   keywords: [
     "California IRP",
     "IFTA California",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "CA Trucking Solutions",
     title: "CA Trucking Solutions | IRP & Insurance Compliance Made Easy",
     description:
-      "Streamline California IRP registration, IFTA fuel licensing, and trucking insurance. Licensed IRP agents, fast turnaround, all-in-one compliance for California truckers.",
+      "Streamline California IRP registration, IFTA fuel tax, and trucking insurance. Fast turnaround and all-in-one compliance support for California truckers.",
   },
   twitter: {
     card: "summary_large_image",

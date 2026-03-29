@@ -46,7 +46,7 @@ export function HomeHero() {
               Streamline your{" "}
               <strong className="font-semibold text-brand-navy">California IRP registration</strong>
               ,{" "}
-              <strong className="font-semibold text-brand-navy">IFTA fuel licensing</strong>, and{" "}
+              <strong className="font-semibold text-brand-navy">IFTA fuel tax compliance</strong>, and{" "}
               <strong className="font-semibold text-brand-navy">trucking insurance</strong>
               —all in one place. Get in compliance today with friendly, hassle-free service tailored for
               California truckers.
@@ -71,7 +71,7 @@ export function HomeHero() {
           <li className="rounded-xl border border-slate-100 bg-slate-50 px-5 py-4 text-left shadow-sm">
             <p className="text-sm font-bold text-brand-orange">CA experts</p>
             <p className="mt-1 text-sm text-slate-600">
-              Licensed IRP agents &amp; insurance specialists
+                  IRP registration &amp; insurance specialists
             </p>
           </li>
           <li className="rounded-xl border border-slate-100 bg-slate-50 px-5 py-4 text-left shadow-sm">
@@ -112,7 +112,7 @@ export function WhySection() {
             </div>
             <h3 className="mt-4 text-lg font-semibold text-brand-navy">California experts</h3>
             <p className="mt-2 text-sm leading-relaxed text-slate-600">
-              Licensed IRP agents and insurance specialists who know{" "}
+                  IRP registration and insurance specialists who know{" "}
               <abbr title="California Department of Motor Vehicles" className="no-underline">
                 DMV
               </abbr>{" "}
@@ -179,7 +179,7 @@ export function ServicesSection() {
             },
             {
               id: "ifta",
-              title: "IFTA fuel license",
+              title: "IFTA fuel tax account",
               body: "California IFTA account setup and decals for fuel tax reporting. We help structure quarterly filing so you avoid penalties.",
             },
             {
@@ -320,7 +320,7 @@ export function PricingSection() {
             <p className="mt-1 text-sm text-slate-500">Owner-operators & single trucks</p>
             <ul className="mt-6 flex-1 list-inside list-disc space-y-2 text-sm text-slate-600">
               <li>Basic IRP setup</li>
-              <li>IFTA license</li>
+                  <li>IFTA account setup</li>
               <li>Liability insurance assistance</li>
             </ul>
             <p className="mt-6 border-t border-slate-200 pt-6 text-sm text-slate-600">
@@ -371,16 +371,17 @@ export function TrustSection() {
           id="trust-heading"
           className="mt-2 text-2xl font-bold tracking-tight text-brand-navy sm:text-3xl"
         >
-          Licensed, reviewed, transparent
+          Trusted, reviewed, transparent
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg text-brand-navy">
               <IconShield className="h-7 w-7" />
             </div>
-            <h3 className="mt-4 font-semibold text-brand-navy">Licensed & verified</h3>
+            <h3 className="mt-4 font-semibold text-brand-navy">Experienced compliance support</h3>
             <p className="mt-2 text-sm text-slate-600">
-              DMV-approved IRP service provider and licensed broker-agent (where applicable).
+              We help California carriers with IRP, IFTA, and insurance paperwork. We are not affiliated
+              with or endorsed by the DMV, FMCSA, or any government agency.
             </p>
           </article>
           <blockquote className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
