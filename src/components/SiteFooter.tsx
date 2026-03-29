@@ -8,7 +8,8 @@ export function SiteFooter() {
           <div>
             <p className="font-semibold text-white">CA Trucking Solutions</p>
             <p className="mt-3 max-w-md text-sm leading-relaxed">
-              Not licensed by the California DMV or any other goverment agencies. Informational purposes only.
+              Not licensed by the California DMV or any other government agencies. Informational
+              purposes only.
             </p>
           </div>
           <div className="flex flex-col gap-2 text-sm md:items-end">
@@ -26,10 +27,18 @@ export function SiteFooter() {
             </Link>
           </div>
         </div>
-        <p className="mt-10 border-t border-white/10 pt-8 text-xs leading-relaxed text-white/55">
-          This site provides general information—not legal advice. Insurance products and IRP
-          outcomes depend on underwriting, DMV, and FMCSA rules at the time of application.
-        </p>
+        <div className="mt-10 space-y-4 border-t border-white/10 pt-8 text-xs leading-relaxed text-white/55">
+          <p className="text-sm text-white/70">© 2026 CA Trucking Solutions. All rights reserved.</p>
+          <p>
+            This website is privately owned and the services offered are not provided by or endorsed
+            by the California Department of Motor Vehicles (DMV) or any state or federal government
+            agency.
+          </p>
+          <p>
+            This site provides general information—not legal advice. Insurance products and IRP
+            outcomes depend on underwriting, DMV, and FMCSA rules at the time of application.
+          </p>
+        </div>
       </div>
     </footer>
   );
