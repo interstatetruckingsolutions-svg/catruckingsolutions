@@ -183,19 +183,24 @@ export function ServicesSection() {
               body: "California IFTA account setup and decals for fuel tax reporting. We help structure quarterly filing so you avoid penalties.",
             },
             {
-              id: "boc-3",
-              title: "Process agent (BOC-3)",
-              body: "We file your FMCSA BOC-3 so you have a legal agent in every state you run—helping keep operating authority active.",
-            },
-            {
               id: "insurance",
               title: "Trucking insurance",
               body: "Commercial auto and cargo insurance: liability, motor truck cargo, physical damage, and more. We compare carriers for competitive rates and solid coverage.",
             },
             {
+              id: "dot-mc",
+              title: "DOT & MC numbers",
+              body: "USDOT number registration and updates with FMCSA, plus MC (operating authority) applications and changes when you need interstate for-hire authority. We walk you through requirements and filings.",
+            },
+            {
               id: "compliance-consulting",
               title: "Compliance audits & consulting",
               body: "Driver logs, maintenance, fuel reports—we help you maintain records and prepare for DMV and CSA audits. Goal: zero surprises on inspection day.",
+            },
+            {
+              id: "boc-3",
+              title: "Process agent (BOC-3)",
+              body: "We file your FMCSA BOC-3 so you have a legal agent in every state you run—helping keep operating authority active.",
             },
           ].map((s) => (
             <article

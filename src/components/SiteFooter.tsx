@@ -5,9 +5,10 @@ import { SITE_NAME } from "@/lib/site";
 const serviceLinks = [
   { href: "/services#irp", label: "IRP registration" },
   { href: "/services#ifta", label: "IFTA fuel tax" },
-  { href: "/services#boc-3", label: "BOC-3 process agent" },
   { href: "/services#insurance", label: "Trucking insurance" },
+  { href: "/services#dot-mc", label: "DOT & MC numbers" },
   { href: "/services#compliance-consulting", label: "Compliance consulting" },
+  { href: "/services#boc-3", label: "BOC-3 process agent" },
 ];
 
 const companyLinks = [
