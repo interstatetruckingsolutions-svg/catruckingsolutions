@@ -195,7 +195,7 @@ export function ServicesSection() {
             {
               id: "compliance-consulting",
               title: "Compliance audits & consulting",
-              body: "Driver logs, maintenance, fuel reports—we help you maintain records and prepare for DMV and CSA audits. Goal: zero surprises on inspection day.",
+              body: "Driver logs, maintenance, fuel reports—we help you maintain records and prepare for DMV, IFTA and DOT audits. Goal: zero surprises on inspection day.",
             },
             {
               id: "boc-3",
