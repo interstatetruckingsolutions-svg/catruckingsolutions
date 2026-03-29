@@ -13,16 +13,16 @@ export function SiteFooter() {
             </p>
           </div>
           <div className="flex flex-col gap-2 text-sm md:items-end">
-            <Link href="#services" className="hover:text-white">
+            <Link href="/services" className="hover:text-white">
               Services
             </Link>
-            <Link href="#pricing" className="hover:text-white">
+            <Link href="/pricing" className="hover:text-white">
               Pricing
             </Link>
-            <Link href="#faq" className="hover:text-white">
+            <Link href="/faq" className="hover:text-white">
               FAQs
             </Link>
-            <Link href="#contact" className="hover:text-white">
+            <Link href="/contact" className="hover:text-white">
               Contact
             </Link>
           </div>

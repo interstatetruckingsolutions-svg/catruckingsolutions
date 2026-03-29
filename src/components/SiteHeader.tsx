@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const nav = [
-  { href: "#why", label: "Why us" },
-  { href: "#services", label: "Services" },
-  { href: "#how-it-works", label: "How it works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQs" },
+  { href: "/why", label: "Why us" },
+  { href: "/services", label: "Services" },
+  { href: "/how-it-works", label: "How it works" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/faq", label: "FAQs" },
 ];
 
 export function SiteHeader() {
@@ -61,7 +61,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            href="#contact"
+            href="/contact"
             className="mt-2 rounded-full bg-brand-orange px-4 py-2.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-brand-orange/90 md:mt-0"
             onClick={() => setOpen(false)}
           >
