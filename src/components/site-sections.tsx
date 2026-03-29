@@ -173,29 +173,35 @@ export function ServicesSection() {
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
+              id: "irp",
               title: "IRP registration & renewal",
               body: "Apportioned California plates and cab cards for interstate operation. We calculate fees (mileage, weight, VLF) and submit your application.",
             },
             {
+              id: "ifta",
               title: "IFTA fuel license",
               body: "California IFTA account setup and decals for fuel tax reporting. We help structure quarterly filing so you avoid penalties.",
             },
             {
+              id: "boc-3",
               title: "Process agent (BOC-3)",
               body: "We file your FMCSA BOC-3 so you have a legal agent in every state you run—helping keep operating authority active.",
             },
             {
+              id: "insurance",
               title: "Trucking insurance",
               body: "Commercial auto and cargo insurance: liability, motor truck cargo, physical damage, and more. We compare carriers for competitive rates and solid coverage.",
             },
             {
+              id: "compliance-consulting",
               title: "Compliance audits & consulting",
               body: "Driver logs, maintenance, fuel reports—we help you maintain records and prepare for DMV and CSA audits. Goal: zero surprises on inspection day.",
             },
           ].map((s) => (
             <article
-              key={s.title}
-              className="rounded-2xl border border-slate-100 bg-slate-50/80 p-6 transition hover:border-slate-200 hover:shadow-md"
+              key={s.id}
+              id={s.id}
+              className="scroll-mt-28 rounded-2xl border border-slate-100 bg-slate-50/80 p-6 transition hover:border-slate-200 hover:shadow-md"
             >
               <h3 className="text-lg font-semibold text-brand-navy">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.body}</p>
