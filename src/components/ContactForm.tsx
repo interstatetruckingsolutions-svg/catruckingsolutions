@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { FormEvent, useState } from "react";
-import { SITE_CONTACT_EMAIL } from "@/lib/site";
+import { SITE_CONTACT_EMAIL, SITE_NAME } from "@/lib/site";
 
 export function ContactForm() {
   const [status, setStatus] = useState<string | null>(null);
@@ -29,6 +30,12 @@ export function ContactForm() {
     if (fd.get("svc_insurance")) lines.push("- Insurance");
     if (fd.get("svc_other")) lines.push("- Other");
     lines.push("", "Message:", String(fd.get("message") ?? ""));
+    lines.push(
+      "",
+      "Agreements (required to submit):",
+      `- Privacy Policy: ${fd.get("consent_privacy") === "yes" ? "Agreed" : "Not agreed"}`,
+      `- Communications: ${fd.get("consent_communications") === "yes" ? "Agreed" : "Not agreed"}`,
+    );
 
     const body = encodeURIComponent(lines.join("\n"));
     const subject = encodeURIComponent(
@@ -39,11 +46,7 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      onSubmit={onSubmit}
-      className="mx-auto mt-10 max-w-2xl space-y-6"
-      noValidate
-    >
+    <form onSubmit={onSubmit} className="mx-auto mt-10 max-w-2xl space-y-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-sm font-medium text-brand-navy">
           <span className="mb-1.5 block">Full name</span>
@@ -133,6 +136,45 @@ export function ContactForm() {
           />
         </label>
       </div>
+      <fieldset className="space-y-4 rounded-lg border border-slate-200 bg-slate-50/80 p-4">
+        <legend className="px-1 text-sm font-medium text-brand-navy">Required agreements</legend>
+        <label className="flex cursor-pointer gap-3 text-sm leading-snug text-slate-700">
+          <input
+            type="checkbox"
+            name="consent_privacy"
+            value="yes"
+            required
+            className="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-brand-orange focus:ring-brand-orange"
+          />
+          <span>
+            I have read and agree to the{" "}
+            <Link
+              href="/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-brand-orange underline decoration-brand-orange/40 hover:decoration-brand-orange"
+            >
+              Privacy Policy
+            </Link>
+            .
+          </span>
+        </label>
+        <label className="flex cursor-pointer gap-3 text-sm leading-snug text-slate-700">
+          <input
+            type="checkbox"
+            name="consent_communications"
+            value="yes"
+            required
+            className="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-brand-orange focus:ring-brand-orange"
+          />
+          <span>
+            I agree to receive calls, text messages, and emails at the phone number and email address
+            I provided—including using automated or prerecorded technology where permitted—from{" "}
+            {SITE_NAME} about my request, services, and related offers. I understand consent is not a
+            condition of purchase and I may opt out as described in the Privacy Policy.
+          </span>
+        </label>
+      </fieldset>
       <p className="text-xs text-slate-500">
         Submit opens your email client with your details—connect a secure form endpoint for
         production.
